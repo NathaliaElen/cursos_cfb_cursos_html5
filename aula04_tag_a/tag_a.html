@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Âncora</title>
+    <style>
+        a {display: block;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Aula 04 - Tag de hipertexto</h1>
+        <p>Tag a é uma marcação de hipertexto/âncora, ou seja, links que podem nos direcionar para páginas internas ou externas.</p>
+        <p>Toda Tag a possuem marcação de abertura e fechamento.</p>
+        <p>Display: inline, todo conteúdo fica um ao lado do outro.</p>
+
+        <h2>Por padrão, os links aparecerão da seguinte forma em todos os navegadores:</h2>
+        <p> 
+        Um link não visitado está sublinhado e azul. <br>
+        Um link visitado está sublinhado e roxo. <br>
+        Um link ativo está sublinhado e vermelho.
+        </p>
+
+        <h2>Atributos/parâmetros</h2>
+        <p>Vão servir para configurar a tag a.</p>
+    </div>
+
+    <div>
+        <h2><a href="#fim" id="topo">Âncora que direcionar para o final da página</a></h2>
+    </div>
+
+    <div>
+        <h2><a> Âncora Vazia</a></h2>
+        <p>Não posso considerar isso como um hipertexto, porque não tem o atributo href.</p>
+    </div>
+
+    <div>
+        <h2><a href="https://www.github.com/NathaliaElen" rel="external" hreflang="en" type="text/html" target="_blank">Meu perfil GitHub</a></h2>
+        <p>Definição: Um link externo aponta para uma página ou recurso em um domínio diferente do que o usuário está atualmente.</p>
+        <p>
+            Exemplo: <a href="https://www.github.com/NathaliaElen" target="_blank">Meu perfil GitHub</a>
+            Neste exemplo, o link leva o usuário ao site que tem meu perfil no GitHub, com um domínio diferente.
+        </p>
+        <p>Uso Comum: Direcionar o usuário para recursos fora do site atual, como sites parceiros, artigos, ou fontes externas.</p>
+        <p>Diferencial Importante: Links externos geralmente incluem o protocolo (http:// ou https://), enquanto links internos normalmente utilizam caminhos relativos ou absolutos sem especificar o protocolo ou domínio.</p>
+    </div>
+
+    <div>
+        <h2><a href="tag_h1_ate_h6.html" media="screen" hreflang="pt-br" type="text/html">Arquivo Aula 03- Tags de Títulos</a></h2>
+        <p>Definição: Um link interno aponta para outra página ou recurso dentro do mesmo domínio (ou site).</p>
+        <p>
+            Exemplo: <a href="tag_h1_ate_h6.html" target="_blank">Sobre Nós</a>
+            Neste exemplo, o link leva a uma página chamada "sobre.html" dentro do mesmo site.
+        </p>
+        <p>Uso Comum: Navegação entre páginas de um site, links para seções da mesma página (usando âncoras), ou para arquivos hospedados no mesmo servidor.</p>
+        <p>Se estiver na mesma pasta, só indico o nome do arquivo. Senão vou ter que indicar o nome da pasta + /.</p>
+    </div>
+
+   <div>
+        <h2><a href="teste/tag_h1_ate_h6.html" media="screen" hreflang="pt-br" type="text/html">Arquivo Aula 03 dentro de outra pasta</a></h2>
+        <p>Se estiver dentro de uma outra pasta, preciso indicar o nome da pasta e por uma barra. Exemplo: teste/</p>
+        <p>Para voltar na estrutura de um diretório que está na pasta anterior ao meu arquivo atual usamos o: ../</p>
+   </div>
+
+    <div>
+        <h2><a href="arquivoteste.zip" download>Download de Arquivo</a></h2>
+    </div>
+
+    <div>
+        <h2><a href="mailto:nathalia.analista.sistemas@gmail.com?cc=nathaliaelen79@gamil.com&bcc=ellennathalia129@gmail.com&Subject=CFB%Cursos&body=Curso%de%HTML%Completo%e%Profissional">Abrir Email</a></h2>
+    </div>
+
+    <div>
+        <h2><a href="javascript:alert('CFB Cursos');">JavaScript</a></h2>
+    </div>
+
+    <div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <h2>Criado Por:</h2>
+        <p>Nathália Elen em 01/09/2024.</p>
+
+        <p><a href="#topo" id="fim">FIM</a></p>
+    </div>
+
+    
+</body>
+</html>
