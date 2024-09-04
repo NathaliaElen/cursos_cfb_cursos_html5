@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag area e map</title>
+</head>
+<body>
+    <h1>Aula 07 - Tag area e map</h1>
+    <p>Algumas tags dependem de outras: A tag de area é filha da tag map, ou seja, os elementos da tag area são sempre aninhados dentro de uma tag map.</p>
+    <p>A tag area define uma área dentro de um mapa de imagem (um mapa de imagem é uma imagem com áreas clicáveis) através de definições de shapes sendo poly, circle or rect.</p>
+    <p>Quando falamos da tag map não estamos falando só de mapa, estamos mapeando áreas de clique.</p>
+
+    <img src="img/mapa_regioes_brasil.jpg" alt="é uma imagem de um mapa contendo as 5 regiões do Brasil." usemap="#mapa_regioes_brasil">
+    <map name="mapa_regioes_brasil">
+        <area alt="Região Sudeste" shape="poly" coords="215,283,226,268,236,256,253,242,267,241,272,219,301,202,325,123,342,221,344,256,312,290,259,311,244,288,222,283" href="https://brasilescola.uol.com.br/brasil/regiao-sudeste.htm" target="_blank" hreflang="pt-br" rel="external">
+
+        <img src="img/prateleiras_com_itens.png" alt="3 prateleiras com livros, plantas, um abajur" usemap="#prateleiras_com_itens">
+        <map name="prateleiras_com_itens">
+            <area shape="poly" coords="651,737,648,680,650,630,729,624,816,624,819,676,812,735,729,735,714,768,674,809,661,850,677,887,729,888,781,888,792,853,781,811,751,774,742,752,733,737" href="https://www.leroymerlin.com.br/abajures" alt="abajur para comprar no site Leroy Merlin" target="_blank" hreflang="pt-br" rel="external">
+        </map>
+    </map>
+</body>
+</html>
