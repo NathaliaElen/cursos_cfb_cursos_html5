@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Audio</title>
+</head>
+<body>
+    <h1>Aula 10 - tag Audio</h1>
+    <p>A tag audio no HTML5 é usada para incorporar arquivos de áudio em uma página da web. Ela permite que você adicione um player de áudio nativo com controles de reprodução, pausa, volume, etc., diretamente no navegador, sem a necessidade de plugins externos, como o Flash.</p>
+    <p>Tem como trabalhar com ela de duas formas: colocando a tag source dentro da tag audio ou colocando o atributo src como atributo na tag audio.</p>
+
+    <h2>Atributos Comuns</h2>
+    <p>src: aponta qual arquivo de audio quero reproduzir.</p>
+    <p>controls: Exibe os controles padrão de reprodução (play, pause, volume).</p>
+    <p>autoplay: Inicia automaticamente a reprodução do áudio ao carregar a página.</p>
+    <p>loop: Faz com que o áudio seja reproduzido em loop contínuo.  </p>
+    <p>muted: Inicia o áudio mudo.</p>
+    <p>preload: Define como o navegador deve carregar o áudio (auto, metadata, none).</p>
+    <p>Mediagroup: informa qual grupo de elementos esse audio representa. é usado para associar vários elementos de mídia para que eles possam ser controlados juntos. Isso significa que você pode agrupar múltiplos players de áudio ou vídeo para que, por exemplo, pausar um áudio pause os outros no mesmo grupo.</p>
+
+    <audio src="Corporate Harmonics_0.43.mp3" controls>
+        Seu navegador não tem suporte a tag audio.
+    </audio>
+</body>
+</html>
