@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag bdo</title>
+</head>
+<body>
+    <h1>Aula 13 - tag bdo</h1>
+    <p>A tag <bdo> (Bidirectional Override) é usada para sobrescrever a direção do texto em um documento HTML, alterando o fluxo de leitura. Isso é útil em textos com idiomas que possuem direções de escrita diferentes, como o árabe (da direita para a esquerda) ou o inglês (da esquerda para a direita).</p>
+    <p>Para o nosso idioma o português, não tem muita utilidade essa tag, somente para idiomas que tem a escrita invertida.</p>
+    <p><b>Atributo próprio apenas 1:</b> Dir - que define a direção do texto (ltr para esquerda para direita, ou rtl para direita para esquerda). O padrão do atributo dir é da esquerda para direita.</p>
+    
+    <br>
+    <h2>Usando Atributo dir - esquerda</h2>
+    <bdo dir="ltr">CFB Cursos - Curso de HTML5 Completo e Profissional.</bdo>
+
+    <br><br>
+    <h2>Usando Atributo dir - direita</h2>
+    <bdo dir="rtl">CFB Cursos - Curso de HTML5 Completo e Profissional.</bdo>
+
+    <br><br>
+    <h2>Usando a tag bdo dentro de uma tag p</h2>
+    <p>CFB Cursos - Curso de HTML5 <bdo dir="rtl">Completo</bdo> e Profissional.</p>
+</body>
+</html>
