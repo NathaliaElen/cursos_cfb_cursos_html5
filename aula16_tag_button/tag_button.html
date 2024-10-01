@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag button</title>
+</head>
+<body>
+    <h1>Aula 16 - tag button</h1>
+    <p>A tag button em HTML é usada para criar um botão clicável na interface de uma página web. Ela pode executar ações como submeter formulários ou ativar scripts.</p>
+    <p>Pode ser totalmente formatavel via CSS.</p>
+
+    <h2>Atributos comuns:</h2>
+    <p>type: Define o tipo do botão.</p>
+    <button type="submit">Enviar</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('CFB Cursos')">Button: apenas para uso com scripts para configurar a ação do botão</button>
+
+    <p>disabled: Desativa o botão, tornando-o não clicável.</p>
+    <button disabled>Desativado</button>
+
+    <p>name e value: Associam um nome e valor ao botão, que são enviados ao servidor ao submeter um formulário.</p>
+    <form action="/processar" method="POST">
+        <input type="text" name="usuario" placeholder="Seu nome">
+        
+        <button type="submit" name="acao" value="enviar">Enviar</button>
+        <button type="submit" name="acao" value="cancelar">Cancelar</button>
+      </form>
+
+    <p>autofocus: Foca automaticamente o botão quando a página é carregada.</p>
+    <button autofocus>Foco</button>
+
+    <h2>Atributos relacionados ao form que podem ser aplicados no button:</h2>
+    <p>form: Especifica a qual formulário o botão está associado. É útil quando o botão está fora do elemento form.</p>
+    <form id="meuFormulario">
+        <!-- campos do formulário -->
+    </form>
+    <button form="meuFormulario">Enviar</button>
+
+    <p>formaction: Define a URL onde os dados do formulário serão enviados ao clicar no botão. Esse atributo sobrescreve o action do próprio formulário.</p>
+    <button type="submit" formaction="/enviar">Enviar</button>
+
+    <p>formenctype: Define o tipo de codificação dos dados ao submeter o formulário. É usado principalmente com formulários que enviam arquivos.</p>
+    <button type="submit" formenctype="multipart/form-data">Enviar Arquivo</button>
+
+    <p>formmethod: Define o método de envio do formulário (GET ou POST), sobrescrevendo o método definido no formulário.</p>
+    <button type="submit" formmethod="post">Enviar via POST</button>
+
+    <p>formnovalidate: Desativa a validação de campos antes de enviar o formulário. Esse atributo é usado apenas em botões de tipo submit.</p>
+    <button type="submit" formnovalidate>Enviar sem Validar</button>
+
+    <p>formtarget: Define onde abrir a resposta após o envio do formulário. Pode abrir em uma nova aba ou janela, por exemplo.</p>
+    <button type="submit" formtarget="_blank">Enviar em Nova Aba</button>
+</body>
+</html>
